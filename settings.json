@@ -8,8 +8,7 @@
   "server": {
     "ip": "Gpinoyserver.aternos.me",
     "port": 59345,
-    "version": "26.52",
-    "try-creative": false
+    "version": "26.52"
   },
   "position": {
     "enabled": true,
@@ -19,8 +18,8 @@
   },
   "utils": {
     "auto-auth": {
-      "enabled": false,
-      "password": "YourAuthPassword"
+      "enabled": true,
+      "password": "Slobos"
     },
     "anti-afk": {
       "enabled": true,
@@ -29,16 +28,22 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 120,
+      "repeat-delay": 500,
       "messages": [
         "I'm a regular player",
+        "Subscribe to Slobos!",
         "I like to play Minecraft!"
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
     "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
+    "max-reconnect-delay": 20000,
+    "periodic-rejoin": {
+      "enabled": true,
+      "min-interval": 20,
+      "max-interval": 60
+    }
   },
   "movement": {
     "enabled": true,
@@ -59,7 +64,7 @@
   "modules": {
     "avoidMobs": true,
     "combat": true,
-    "beds": false,
+    "beds": true,
     "chat": true,
     "console-commands": true
   },
@@ -68,12 +73,12 @@
     "auto-eat": true
   },
   "beds": {
-    "pick-up-day": false,
-    "place-night": false
+    "pick-up-day": true,
+    "place-night": true
   },
   "discord": {
-    "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "enabled": true,
+    "webhookUrl": "",
     "events": {
       "connect": true,
       "disconnect": true,
@@ -81,7 +86,6 @@
     }
   },
   "chat": {
-    "respond": true,
-    "tpWhitelist": ["YourMinecraftUsername"]
+    "respond": true
   }
 }
